@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        First Name:
+        <input type="text" name="firstname" maxlength="50" required> <br>
+        Last Name:
+        <input type="text" name="lastname" maxlength="50" required> <br>
+        Date of Birth:
+        <input type="date" name="dob"> <br>
+        Weight:
+        1<input type="range" min="1" aria-current="1" max="300">300 Selected Value = 1<br>
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female" checked> Female <br>
+        No. of Siblings:
+        <input type="number" min="1" max="15" step="1"> (0 to 15) <br><br>
+        Employment:
+        <select name="employment" multiple size="8">
+            <optgroup label="Government"></optgroup>
+            <option name="administrative"> Administrative</option>
+            <option name="technical"> Technical</option>
+            <optgroup label="Private Sector"></optgroup>
+            <option name="owner"> Owner</option>
+            <option name="employee"> Employee</option>
+            <option name="other"> other</option>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Contact Information</legend>
+        Email:
+        <input type="email" name="usremail">
+        Phone: <input type="tel" name="usrtel">
+        <br>
+        Preferred Contact Methods: <br>
+        <input type="checkbox" name="method"> By Phone <br>
+        <input type="checkbox" name="method"> By Email <br>
+        <input type="checkbox" name="method"> By Mailing Address <br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Address Information</legend>
+        Address:
+        <input type="text" size="20"> <br>
+        City:
+        <select name="list">
+            <option value="AL-wakra">Al-Wakra</option>
+            <option value="doha">Doha</option>
+            <option value="AL-Khor">Al-Khor</option>
+            <option value="AL-gharrafa">Al-Gharrafa</option>
+            <option value="AL-Shamal">Al-Shamal</option>
+        </select> <br>
+        Country:
+        <select name="list">
+            <option value="qatar">Qatar</option>
+            <option value="kwait">Kwait</option>
+            <option value="bahrain">Bahrain</option>
+        </select>
+    </fieldset>
+    <br>
+    <input type="button" value="Submit">
+    <input type="reset" value="Reset">
+    <br>
+</form>
+</body>
+</html>
